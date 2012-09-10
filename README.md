@@ -45,3 +45,6 @@ $ dmesg | grep pps
 [   10.339448] pps pps0: new PPS source pps-gpio.-1
 [   10.341591] pps pps0: Registered IRQ 108 as PPS source
 ```
+
+## Credits:
+All of these modifications were cobbled together by reading this [thread and following its instructions](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=9&t=1970)
