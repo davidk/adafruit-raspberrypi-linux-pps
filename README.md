@@ -77,5 +77,6 @@ It may be helpful to scope the PPS line to see if the GPS module is actually sen
 output only becomes active after a fix.
 
 ## Credits
-All of these modifications were cobbled together by reading this [thread and following its instructions](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=9&t=1970)
+All of these modifications were cobbled together by reading this [thread and following its instructions](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=9&t=1970).
+
 See [this repository](https://github.com/davidk/adafruit-raspberrypi-linux), (branch: ppsgpio) for source code.
