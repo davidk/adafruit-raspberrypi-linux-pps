@@ -1,8 +1,11 @@
 # adafruit-raspberrypi-linux-pps
 
-Kernel image and modules with PPS-GPIO added. This will allow you to use PPS with NTP on a Raspberry Pi.
+Kernel image and modules with PPS-GPIO added. This will allow you to use PPS with NTP on a Raspberry Pi. 
 
-Please see [this page](https://github.com/davidk/adafruit-raspberrypi-linux), branch: ppsgpio for the source 
+This repository is used as a part of this [article](http://open.konspyre.org/blog/2012/10/18/raspberry-pi-time-server/), so check
+that out for help.
+
+For source modifications, please see [this page](https://github.com/davidk/adafruit-raspberrypi-linux), branch: ppsgpio for the source 
 this is based on.
 
 ## Installation
