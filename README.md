@@ -1,12 +1,26 @@
 # adafruit-raspberrypi-linux-pps
 
-Kernel image and modules with PPS-GPIO added (this tracks Adafruit's current Occidentalis kernel version and will 
+#### Update: 2015/02/09
+
+Please note that this kernel is woefully out of date.
+Don't use it.
+
+Your Raspberry Pi B+ and RPi2 will
+shed tears (not work), and you'll just want to break
+things (and me).
+
+I'll get a proper kernel going sooner or later, but
+consider this archived.
+
+## Intro
+
+Kernel image and modules with PPS-GPIO added (this tracks Adafruit's current Occidentalis kernel version and will
 probably be rebuilt when they next update). This will allow you to use PPS with NTP on a Raspberry Pi.
 
 This repository is used as a part of this [article](http://open.konspyre.org/blog/2012/10/18/raspberry-pi-time-server/), so check
 that out for help.
 
-For source modifications, please see [this page](https://github.com/davidk/adafruit-raspberrypi-linux), branch: ppsgpio for the source 
+For source modifications, please see [this page](https://github.com/davidk/adafruit-raspberrypi-linux), branch: ppsgpio for the source
 this is based on.
 
 ## Installation
@@ -48,11 +62,11 @@ $ dmesg | grep pps
 [   10.341591] pps pps0: Registered IRQ 108 as PPS source
 ```
 
-PPS input will be available on pin 23 of the Raspberry Pi header. 
+PPS input will be available on pin 23 of the Raspberry Pi header.
 
-**Note**: Ensure that your GPS unit's PPS output is 3.3v friendly! 
+**Note**: Ensure that your GPS unit's PPS output is 3.3v friendly!
 
-If you're looking for a unit which fulfills this requirement, Adafruit's Ultimate GPS (all versions) 
+If you're looking for a unit which fulfills this requirement, Adafruit's Ultimate GPS (all versions)
 has a 1PPS output which is around ~2.8V, and is compatible with the Raspberry Pi.
 
 Once connected, install `pps-tools` to test:
@@ -74,7 +88,7 @@ ok, found 1 source(s), now start fetching data...
 source 0 - assert [....], sequence: [....] - clear  [....], sequence: [....]
 ```
 
-If your output looks something like the above (brackets are numbers removed for clarity), you're all set. If not, 
+If your output looks something like the above (brackets are numbers removed for clarity), you're all set. If not,
 verify that everything is connected and that the pps-gpio kernel module is loaded (along with the -pps kernel itself).
 
 It may be helpful to scope the PPS line to see if the GPS module is actually sending a signal. On some units, the 1PPS
